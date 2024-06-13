@@ -1,0 +1,17 @@
+.tobBar{
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  
+}
+  @keyframes blink {
+    0%{opacity: 1;}
+    50%{opacity: .1;}
+    100%{opacity: 1;}
+  }
+  
+  .blinking-text {
+    animation: blink 1s infinite;
+  }
+
+ 
