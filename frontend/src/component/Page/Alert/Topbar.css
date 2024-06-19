@@ -1,5 +1,4 @@
 .tobBar{
-  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 500;
 }
@@ -7,10 +6,7 @@
 @media (max-width: 767px) {
 
   .tobBar{
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: 500;
-    font-size: calc(1rem + .3vw);
+   letter-spacing: 50;
   }
 }
 @media (max-width: 400px) {

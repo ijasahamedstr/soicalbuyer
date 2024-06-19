@@ -11,6 +11,7 @@ import Users from "./component/Page/Users/Users";
 import Market from "./component/Page/Market History/market history";
 import Leaderboard from "./component/Page/Leaderboard/Leaderboard";
 import Store from "./component/Page/USRGG Store/USRGG Store";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/Social Medias" element={<Social/>}/>
+      <Route path="/Social-Medias" element={<Social/>}/>
       <Route path="/Games" element={<Games/>}/>
       <Route path="/Services" element={<Services/>}/>
       <Route path="/Users" element={<Users/>}/>

@@ -10,7 +10,6 @@ function AlertDismissibleExample() {
     padding: "10px",
     borderColor: 'rgb(97, 100, 255)',
     fontSize: '1rem',
-    bott: 0,
     
   };
 
@@ -20,13 +19,15 @@ function AlertDismissibleExample() {
     fontSize: '1.11rem',
     lineHeight: 1.1,
   };
-
-
+  
   if (show) {
     return (
       <Alert style={mystyle} className='tobBar' onClose={() => setShow(false)} dismissible>
         <Alert.Heading style={mystyle1} className="blinkingtext">
-          احذر المحتالين ، المنصة لا تتواصل بأي طريقة خارج الموقع الرسمي</Alert.Heading>
+          <div className='container text-center'>
+          احذر المحتالين ، المنصة لا تتواصل بأي طريقة خارج الموقع الرسمي
+          </div>
+        </Alert.Heading>
       </Alert>
     );
   }
