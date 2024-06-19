@@ -1,77 +1,44 @@
-import * as React from 'react';
-import { alpha } from '@mui/material';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+import React from 'react';
 
-export default function Hero() {
+export default function HeroImage() {
+  const mystyle = {
+    fontFamily: "Tajawal', sans-serif",
+    fontWeight: '400' 
+  };
+
+  const mystyle1 = {
+    fontFamily: "Tajawal', sans-serif", 
+    color: '#6164ff',
+    letterSpacing: 3,
+    fontWeight: '500' 
+  };
+
+  const mystyle2 = {
+    fontFamily: "Tajawal', sans-serif", 
+    letterSpacing: 1,
+    fontSize: 18,
+    fontWeight: '400' 
+  };
+
   return (
-    <Box
-      id="hero"
-      sx={(theme) => ({
-        width: '100%',
-        backgroundImage:
-          theme.palette.mode === 'light'
-            ? 'linear-gradient(180deg, #CEE5FD, #FFF)'
-            : `linear-gradient(#02294F, ${alpha('#090E10', 0.0)})`,
-        backgroundSize: '100% 20%',
-        backgroundRepeat: 'no-repeat',
-      })}
-    >
-      <Container
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          pt: { xs: 14, sm: 20 },
-          pb: { xs: 8, sm: 12 },
-        }}
+    <header style={{ paddingLeft: 0,backgroundColor: "#16151a" }}>
+      <div
+        className='p-5 text-center bg-image'
+        style={{  backgroundImage: "url('https://usr.dokan-cdn.com/img/home/home.png')", height: 400 }}
       >
-        <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
-          <Typography
-            variant="h1"
-            sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', md: 'row' },
-              alignSelf: 'center',
-              textAlign: 'center',
-              fontSize: 'clamp(3.5rem, 10vw, 4rem)',
-            }}
-          >
-            <Typography
-              component="span"
-              variant="h1"
-              sx={{
-                fontSize: 'clamp(3rem, 10vw, 4rem)',
-                color: (theme) =>
-                  theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
-              }}
-            >
-              products
-            </Typography>
-          </Typography>
-          <Typography
-            textAlign="center"
-            color="text.secondary"
-            sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
-          >
-            من خلال منصة يوزر يمكنك بيع وشراء المنتجات الرقمية بأمان وسلاسة   
-          </Typography>
-          <Stack
-            direction={{ xs: 'column', sm: 'row' }}
-            alignSelf="center"
-            spacing={1}
-            useFlexGap
-            sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
-          >
-            <Button variant="contained" color="primary">
-              Start now
-            </Button>
-          </Stack>
-        </Stack>
-      </Container>
-    </Box>
+        <div className='container'>
+          <div className='d-flex justify-content-center align-items-center h-100'>
+            <div className='text-white'>
+              <h1 style={mystyle} className='mb'>أفضل منصة</h1>
+              <h1 style={mystyle1} className='mb-3'>لبيع وشراء المنتجات الرقمية</h1>
+              <h6 style={mystyle2} className='mb-3'>من خلال منصة يوزر يمكنك بيع وشراء المنتجات الرقمية بأمان وسلاسة</h6><br/>
+              <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
+                Call to action
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   );
 }

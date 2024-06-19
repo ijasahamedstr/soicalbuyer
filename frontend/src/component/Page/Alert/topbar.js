@@ -6,18 +6,26 @@ function AlertDismissibleExample() {
   const [show, setShow] = useState(true);
 
   const mystyle = {
-    color: "white",
     backgroundColor: "rgb(97, 100, 255)",
     padding: "10px",
-    fontFamily: "Noto Kufi Arabic",
     borderColor: 'rgb(97, 100, 255)',
+    fontSize: '1rem',
+    bott: 0,
     
   };
+
+  const mystyle1 = {
+    color: "white",
+    fontFamily: "Noto Kufi Arabic",
+    fontSize: '1.11rem',
+    lineHeight: 1.1,
+  };
+
 
   if (show) {
     return (
       <Alert style={mystyle} className='tobBar' onClose={() => setShow(false)} dismissible>
-        <Alert.Heading style={{ fontSize: '18px' }}  className="blinking-text">
+        <Alert.Heading style={mystyle1} className="blinkingtext">
           احذر المحتالين ، المنصة لا تتواصل بأي طريقة خارج الموقع الرسمي</Alert.Heading>
       </Alert>
     );
