@@ -1,6 +1,4 @@
 import AlertDismissibleExample from "./component/Page/Alert/topbar";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import Navbar from "./component/Page/Navigation/Navigation";
 import { BrowserRouter as Router,Route,Routes} from "react-router-dom";
 import Home from "./component/Page/Home/Home";
@@ -11,7 +9,9 @@ import Users from "./component/Page/Users/Users";
 import Market from "./component/Page/Market History/market history";
 import Leaderboard from "./component/Page/Leaderboard/Leaderboard";
 import Store from "./component/Page/USRGG Store/USRGG Store";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/main.css';
+
+
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/Social-Medias" element={<Social/>}/>
+      <Route path="/التواصل الإجتماعي" element={<Social/>}/>
       <Route path="/Games" element={<Games/>}/>
       <Route path="/Services" element={<Services/>}/>
       <Route path="/Users" element={<Users/>}/>

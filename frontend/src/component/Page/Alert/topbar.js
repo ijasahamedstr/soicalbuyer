@@ -10,13 +10,14 @@ function AlertDismissibleExample() {
     padding: "10px",
     borderColor: 'rgb(97, 100, 255)',
     fontSize: '1rem',
+    borderRadius: '0px',
     
   };
 
   const mystyle1 = {
     color: "white",
     fontFamily: "Noto Kufi Arabic",
-    fontSize: '1.11rem',
+    fontSize: '1rem',
     lineHeight: 1.1,
   };
   
